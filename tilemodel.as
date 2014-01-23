@@ -44,7 +44,7 @@ package
 				for ( i = 0; i < a; i++ ) {
 					//row and column refers not only the grid but what ^2 pixel we are at in the tile for blitting later.
 					//this will allow us to keep track of grid spaces that are sections of a bitmap
-					//_map[selection] referes to which layer we need to access in relation to our asset index
+					//_map[layer] refers to which layer we need to access in relation to our asset index
 					_map[layer][currentRow][currentColumn] = { tile:currentSelection, row:currentRow, column:currentColumn, rotation:rotation };
 					//we are going to denote that the following grids are part of a larger tile
 					currentSelection += .001;
